@@ -20,3 +20,4 @@ def get_extension(url):
    return file_extension
 
 Path("images").mkdir(parents=True, exist_ok=True)
+
