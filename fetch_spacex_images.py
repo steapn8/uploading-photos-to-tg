@@ -15,3 +15,5 @@ def fetch_spacex_last_launch(response):
         filename = f'spacex_{number}{resulting_extension}'
         filepath = f"images/{filename}"
         download_image(filepath, url_spacex)
+        
+fetch_spacex_last_launch(response)

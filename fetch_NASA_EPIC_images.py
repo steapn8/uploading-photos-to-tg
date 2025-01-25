@@ -2,8 +2,6 @@ import requests
 from downloading_image import download_image
 
 
-    
-
 filename = 'hubble.jpeg'
 filepath = f"images/{filename}"
 
