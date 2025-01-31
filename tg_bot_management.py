@@ -13,12 +13,11 @@ parser = argparse.ArgumentParser(
 )
 parser.add_argument('delay', help='Задержка между отпрвкой фото в секундах', type=int, default = 14400)
 args = parser.parse_args()
-
 while True:
     for dirpath, dirnames, filenames in os.walk("images"):
         random.shuffle(filenames)
         for filename in filenames:
             path = f"images/{filename}"
-            bot.send_document(chat_id="@dvmn_tg", document=open(path, "rb"))
+            bot.send_document(chat_id=os.getenv('CHAT_ID'), document=open(path, "rb"))
             time.sleep(2)
     time.sleep(args.delay)
