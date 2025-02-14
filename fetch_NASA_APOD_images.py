@@ -15,8 +15,8 @@ def main():
 
     response = requests.get(url, params=payload)
     response.raise_for_status()
-    images_day_plenty = response.json()
-    for number, url_nasa in enumerate(images_day_plenty):
+    plenty_day_images = response.json()
+    for number, url_nasa in enumerate(plenty_day_images):
         resulting_extension = get_extension(url_nasa["url"])
         filename = f'NASA_{number}{resulting_extension}'
         filepath = f"images/{filename}"
