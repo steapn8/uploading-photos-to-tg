@@ -20,7 +20,7 @@ def main():
             random.shuffle(filenames)
             for filename in filenames:
                 path = f"images/{filename}"
-                bot.send_document(chat_id=chat_id, document=open(path, "rb"))
+                bot.send_document(chat_id, document=open(path, "rb"))
                 time.sleep(2)
         time.sleep(args.delay)
 
