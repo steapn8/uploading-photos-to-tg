@@ -7,7 +7,7 @@ from dotenv import load_dotenv
 
 def main():
     load_dotenv()
-    tg_token = os.getenv('TG_TOKEN')
+    tg_token = os.getenv('TELEGRAM_TOKEN_BOT')
     bot = telegram.Bot(token = tg_token)
     parser = argparse.ArgumentParser(
         description='Программа отправляет все фото из директории с задержкой, которую задают при запуске в секундах.'
@@ -19,7 +19,7 @@ def main():
             random.shuffle(filenames)
             for filename in filenames:
                 path = f"images/{filename}"
-                bot.send_document(chat_id=os.getenv('CHAT_ID'), document=open(path, "rb"))
+                bot.send_document(chat_id=os.getenv('TG_CHAT_ID'), document=open(path, "rb"))
                 time.sleep(2)
         time.sleep(args.delay)
 
