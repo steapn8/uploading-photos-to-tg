@@ -10,13 +10,13 @@ def main():
     api_key = os.getenv('API_KEY_NASA')
     payload = {
         "api_key": api_key,
-        "count":"30"
+        "count":"30"  #количество картинок дня
     }
 
     response = requests.get(url, params=payload)
     response.raise_for_status()
-    plenty_images_day = response.json()
-    for number, url_nasa in enumerate(plenty_images_day):
+    images_day_plenty = response.json()
+    for number, url_nasa in enumerate(images_day_plenty):
         resulting_extension = get_extension(url_nasa["url"])
         filename = f'NASA_{number}{resulting_extension}'
         filepath = f"images/{filename}"
