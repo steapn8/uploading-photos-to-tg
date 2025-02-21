@@ -22,6 +22,8 @@ pip install -r requirements.txt
 Ключ можно взять, если зарегистрироваться в этой [ссылке.](https://api.nasa.gov/)
 ```
 API_KEY_NASA='Ваш ключ'
+TG_CHAT_ID='Личная сыллка к группе'
+TELEGRAM_TOKEN_BOT='Токен вашего бота'
 ```
 
 ### Как запустить 
