@@ -27,20 +27,26 @@ TELEGRAM_TOKEN_BOT='Токен вашего бота'
 ```
 
 ### Как запустить 
+Для отправки собшений через телеграм бота 
 ```
 python tg_bot_management.py 60
 ```
-Для скачивания фоток с сайта NASA картинок дня запустите файл
+есть 2 варианта запуска кода с собственым значением и дефолтным значением являеться 3 часа это значение между котором отправляються фотки
+С дефолтным значением
+```
+python tg_bot_management.py
+```
+Для скачивания фоток с сайта NASA картинок дня запустите файл fetch_NASA_APOD_images.py
 ```
 python fetch_NASA_APOD_images.py
 ```
 
-Для скачивания EPIC фоток с сайта NASA запустите файл
+Для скачивания EPIC фоток с сайта NASA запустите файл fetch_NASA_EPIC_images.py
 ```
 python fetch_NASA_EPIC_images.py
 ```
 
-Для скачивания фоток звпуска spacex запустите файл
+Для скачивания фоток звпуска spacex запустите файл fetch_spacex_images.py 
 ```
 python fetch_spacex_images.py 
 ```
