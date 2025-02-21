@@ -30,11 +30,19 @@ TELEGRAM_TOKEN_BOT='Токен вашего бота'
 ```
 python tg_bot_management.py 60
 ```
-Скачать фотки
+Для скачивания фоток с сайта NASA картинок дня запустите файл
 ```
-fetch_NASA_APOD_images.py
-fetch_NASA_EPIC_images.py
-fetch_spacex_images.py 
+python fetch_NASA_APOD_images.py
+```
+
+Для скачивания EPIC фоток с сайта NASA запустите файл
+```
+python fetch_NASA_EPIC_images.py
+```
+
+Для скачивания фоток звпуска spacex запустите файл
+```
+python fetch_spacex_images.py 
 ```
 ### Цель проекта
 
