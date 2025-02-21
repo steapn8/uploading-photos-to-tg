@@ -18,16 +18,22 @@ Python3 должен быть уже установлен.
 pip install -r requirements.txt
 
 ```
-Вы должны создать .env файл добавить туда токен вашего телеграм бота, id 
+Вы должны создать .env файл добавить туда токен вашего телеграм бота, id вашего канала и ключ с сайта NASA
 Ключ можно взять, если зарегистрироваться в этой [ссылке.](https://api.nasa.gov/)
-
+```
+API_KEY_NASA='Ваш ключ'
+```
 
 ### Как запустить 
 ```
-tg_bot_management.py 60
+python tg_bot_management.py 60
 ```
-  
-
+Скачать фотки
+```
+fetch_NASA_APOD_images.py
+fetch_NASA_EPIC_images.py
+fetch_spacex_images.py 
+```
 ### Цель проекта
 
 
